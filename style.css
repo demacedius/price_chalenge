@@ -1,0 +1,72 @@
+:root{
+    --primary-blue: #010B25;
+    --secondary-blue: #1241C5;
+    --white: #fff;
+
+}
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main>h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 54.6px;
+    line-height: 69.67px;
+}
+
+.highlight{
+    background: -webkit-radial-gradient(#043BCB, #88b3fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offert{
+    margin-top: 2rem;
+    font-size: 14.66px;
+    font-weight: 400;
+    color: #88b3fd;
+    width: 69px;
+    height: 19px;
+    border-style: solid;
+    border-width: 0.92px;
+    border-image: linear-gradient(center, #97BAFF);
+    padding-left: 17.41px;
+    padding-right: 17.41px;
+    padding-top: 8.25px;
+    padding-bottom: 8.25px;
+    border-radius: 54px;
+}
+.button-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.button-header>button.active{
+    border: 0.92px solid var(--white) ;
+    background: radial-gradient(circle at 50% 100%, #0A308B, #1E6EFB);
+    padding-bottom: 9.17px;
+    padding-top: 9.17px;
+    padding-right: 18.33px;
+    padding-left: 18.33px;
+    border-radius: 9.17px;
+}
+
+.button-header>button{
+    border: 0.92px solid var(--white) ;
+    padding-bottom: 9.17px;
+    padding-top: 9.17px;
+    padding-right: 18.33px;
+    padding-left: 18.33px;
+    border-radius: 9.17px;
+}
+
