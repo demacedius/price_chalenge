@@ -7,6 +7,8 @@
 
 * {
   font-family: "Space Grotesk", sans-serif;
+  padding: 0;
+  margin: 0;
   background: var(--primary-blue);
   color: var(--white);
   list-style: none;
@@ -60,7 +62,8 @@ main>h1{
     align-items: center;
     gap: 1rem;
 }
-.button-header>button.active{
+
+button.active{
     border: 0.92px solid var(--white) ;
     background: radial-gradient(circle at 50% 100%, #0A308B, #1E6EFB);
     padding-bottom: 9.17px;
@@ -94,12 +97,16 @@ main>h1{
     border: solid 0.77px #E7EBFF ;
     width: 375.94px;
     border-radius: 20.03px;
-    padding: 1rem;
+    padding: 30.81px;
     background:radial-gradient(circle at 50% 100%, rgba(3,25,83,0.7) 0%, rgba(23,112,247,0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 7.7px;
+    max-height: max-content;
 
 }
 
-.card button{
+button{
     border: solid 0.77px hsla(0, 0%, 100%, 1);
     background: transparent;
     padding-top: 16.95px;
@@ -119,8 +126,7 @@ main>h1{
     line-height: 30.81px;
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: flex-start;
+    gap: 33.9px;
     background-color: transparent;
 }
 
@@ -146,17 +152,21 @@ main>h1{
     background: transparent;
 }
 
+li{
+    padding: 7.7px;
+}
+
 .card h2{
     font-size: 36.36px;
     font-weight: 500;
 }
 
-.card b{
+b{
     font-size: 46.22px;
     font-weight: 500;
 }
 
-.card .price{
+.price{
     background: transparent;
     display: flex;
     align-items: center;
@@ -169,18 +179,31 @@ main>h1{
     
 }
 
+.card>div>.line{
+    width: 337.18px;
+    height: 0.1em;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255,0));
+    position: absolute;
+}
 .best{
     position: relative;
     border: solid 0.77px #E7EBFF ;
     width: 375.94px;
     border-radius: 20.03px;
-    padding: 1rem;
-    background: linear-gradient(to bottom, hsla(218,92%,47%, 0.56), hsla(218,92%,47%,0.2));
+    padding: 30.81px;
+    background: rgba(163, 215, 253, 1);
     overflow: hidden;
 }
 
 .best div{
     background: transparent;
+}
+
+.best>div>.line{
+    width: 337.18px;
+    height: 0.1em;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255,0));
+    position: absolute;
 }
 
 .best::before{
@@ -193,6 +216,23 @@ main>h1{
     height: 130%;
     width: 160%;
     clip-path: ellipse(25% 40% at 50% 50%);
-    background: linear-gradient(rgba(9,89,229,0.56), rgba(9,89,229,0.2));
+    background: linear-gradient(rgba(9,89,229,0.5), rgba(9,89,229,0.2));
 }
+
+.best h2{
+    background: transparent;
+}
+
+.best .card-header h2{
+    font-size: 36.36px;
+    font-weight: 500;
+    
+}
+
+.best .definition{
+    display: flex;
+    flex-direction: column;
+    gap: 33.81px;
+}
+
 
