@@ -9,12 +9,24 @@
   font-family: "Space Grotesk", sans-serif;
   background: var(--primary-blue);
   color: var(--white);
+  list-style: none;
+  box-sizing: border-box;
+}
+
+ul li::before{
+    content: '✓';
+}
+
+ul{
+    background: transparent;
 }
 
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 1787px;
+    max-height: 1140px;
 }
 
 main>h1{
@@ -25,27 +37,24 @@ main>h1{
 }
 
 .highlight{
-    background: -webkit-radial-gradient(#043BCB, #88b3fd);
+    background: radial-gradient(circle at 50%,#043BCB, #88b3fd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .offert{
-    margin-top: 2rem;
     font-size: 14.66px;
     font-weight: 400;
     color: #88b3fd;
-    width: 69px;
-    height: 19px;
     border-style: solid;
     border-width: 0.92px;
-    border-image: linear-gradient(center, #97BAFF);
     padding-left: 17.41px;
     padding-right: 17.41px;
     padding-top: 8.25px;
     padding-bottom: 8.25px;
     border-radius: 54px;
 }
+
 .button-header{
     display: flex;
     align-items: center;
@@ -62,11 +71,128 @@ main>h1{
 }
 
 .button-header>button{
+    font-size: 18px;
+    font-weight: 500;
     border: 0.92px solid var(--white) ;
     padding-bottom: 9.17px;
     padding-top: 9.17px;
     padding-right: 18.33px;
     padding-left: 18.33px;
     border-radius: 9.17px;
+    width: 275px;
+    height: 45px;
+}
+
+.card-container{
+    display: flex;
+    margin-top: 2rem;
+    gap: 33.9px;
+    
+}
+
+.card{
+    border: solid 0.77px #E7EBFF ;
+    width: 375.94px;
+    border-radius: 20.03px;
+    padding: 1rem;
+    background:radial-gradient(circle at 50% 100%, rgba(3,25,83,0.7) 0%, rgba(23,112,247,0.7) 100%);
+
+}
+
+.card button{
+    border: solid 0.77px hsla(0, 0%, 100%, 1);
+    background: transparent;
+    padding-top: 16.95px;
+    padding-bottom: 16.95px;
+    padding-left: 33.9px;
+    padding-right: 33.9px;
+    width: 314.31px;
+    height: 46.9px;
+    border-radius: 9.24px;
+
+}
+
+
+.definition{
+    font-weight: 400;
+    font-size: 18.49px;
+    line-height: 30.81px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+
+.card-header{
+    display: flex;
+    align-items: center;
+    gap: 8.26px;
+    background: transparent;
+}
+
+.card-header>span{
+    border: solid 0.83px var(--white);
+    padding-left: 8.26px;
+    padding-right: 8.26px;
+    padding-top: 4.13px;
+    padding-bottom: 4.13px;
+    border-radius: 6.61px;
+    background: hsla(0, 0%, 100%, 0.08);
+}
+
+.card h2, b,span, p, .definition, li{
+    background: transparent;
+}
+
+.card h2{
+    font-size: 36.36px;
+    font-weight: 500;
+}
+
+.card b{
+    font-size: 46.22px;
+    font-weight: 500;
+}
+
+.card .price{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card div{
+    background: transparent;
+    width: 314.31px;
+    
+}
+
+.best{
+    position: relative;
+    border: solid 0.77px #E7EBFF ;
+    width: 375.94px;
+    border-radius: 20.03px;
+    padding: 1rem;
+    background: linear-gradient(to bottom, hsla(218,92%,47%, 0.56), hsla(218,92%,47%,0.2));
+    overflow: hidden;
+}
+
+.best div{
+    background: transparent;
+}
+
+.best::before{
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: -130px;
+    left: -110px;
+    rotate: 45deg;
+    height: 130%;
+    width: 160%;
+    clip-path: ellipse(25% 40% at 50% 50%);
+    background: linear-gradient(rgba(9,89,229,0.56), rgba(9,89,229,0.2));
 }
 
